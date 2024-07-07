@@ -1,0 +1,70 @@
+@mixin Base{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    list-style-type: none;
+}
+@mixin flex{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+*{
+  margin: 0;
+  // outline: solid 0.5px rgb(13, 0, 43);
+  padding: 0;
+  // background-color: black;
+}
+section{
+  padding: 30px;
+}
+
+.cards__box {
+  @include Base;
+  @include flex;
+  box-sizing: content-box;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  background-color: var(--blue_dark);
+  gap: 20px ;
+  border-radius: 30px;
+}
+.product{
+  @include Base;
+  // display: flex;
+  padding: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  @include flex;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: center;
+  background-color: var(--blue_f);
+  border-radius: 40px;
+  
+  & img{
+    border-radius: 30px;
+    box-shadow: 50%;
+    max-width: 100%;
+    height: 200px;
+    width: 230px;
+  }
+  & h6{
+    margin-top: 15px;
+    font-size: 18px;
+    padding: 5%;
+    text-align: center;
+  }
+  & p {
+    @include Base;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 24px ;
+    border-radius: 2px;
+    }
+      
+  }

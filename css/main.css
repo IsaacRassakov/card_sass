@@ -1,0 +1,119 @@
+:root {
+  --mc:color:red;
+  --white-1:#fff;
+  --blue_dark: #6078EA;
+  --blue_f:#17EAD9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 30px;
+}
+
+.cards__box {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: content-box;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  background-color: var(--blue_dark);
+  gap: 20px;
+  border-radius: 30px;
+}
+
+.product {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  list-style-type: none;
+  padding: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: center;
+  background-color: var(--blue_f);
+  border-radius: 40px;
+}
+.product img {
+  border-radius: 30px;
+  box-shadow: 50%;
+  max-width: 100%;
+  height: 200px;
+  width: 230px;
+}
+.product h6 {
+  margin-top: 15px;
+  font-size: 18px;
+  padding: 5%;
+  text-align: center;
+}
+.product p {
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 24px;
+  border-radius: 2px;
+}
+
+.btn {
+  align-items: center;
+  background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 18px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  margin-top: 20px;
+  text-decoration: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:active, .btn:hover {
+  outline: 0;
+}
+.btn span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+.btn:hover span {
+  background: none;
+}
+.btn:active {
+  transform: scale(0.9);
+}/*# sourceMappingURL=main.css.map */
